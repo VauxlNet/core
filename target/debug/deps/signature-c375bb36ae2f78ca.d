@@ -1,0 +1,12 @@
+/home/kyle/VauxlNet/core/target/debug/deps/signature-c375bb36ae2f78ca.d: /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/lib.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/hazmat.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/encoding.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/error.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/keypair.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/signer.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/verifier.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/../README.md
+
+/home/kyle/VauxlNet/core/target/debug/deps/libsignature-c375bb36ae2f78ca.rmeta: /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/lib.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/hazmat.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/encoding.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/error.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/keypair.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/signer.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/verifier.rs /home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/../README.md
+
+/home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/lib.rs:
+/home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/hazmat.rs:
+/home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/encoding.rs:
+/home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/error.rs:
+/home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/keypair.rs:
+/home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/signer.rs:
+/home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/verifier.rs:
+/home/kyle/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signature-2.2.0/src/../README.md:
