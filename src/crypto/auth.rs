@@ -4,11 +4,26 @@ use argon2::{
     Argon2,
 };
 use ed25519_dalek::SigningKey;
+use rand::RngCore;
 use serde::Serialize;
 
 pub fn hash_password(password: &str) -> Result<String, String> {
     let salt = SaltString::generate(&mut OsRng);
-    let argon2 = Argon2::default();
+
+    // Military-grade parameters (OWASP recommendations for sensitive data)
+    // Memory: 64 MB
+    // Iterations: 3
+    // Parallelism: 4
+    let params = argon2::Params::new(
+        65536, // m_cost in KB
+        3,     // t_cost
+        4,     // p_cost
+        None,
+    )
+    .map_err(|e| e.to_string())?;
+
+    let argon2 = Argon2::new(argon2::Algorithm::Argon2id, argon2::Version::V0x13, params);
+
     let password_hash = argon2
         .hash_password(password.as_bytes(), &salt)
         .map_err(|e| e.to_string())?
@@ -41,7 +56,8 @@ pub fn verify_token<T: for<'a> serde::Deserialize<'a>>(
 /// Generates an Ed25519 keypair for PASETO v4.public tokens.
 /// Returns (public_key_hex, private_key_hex).
 pub fn generate_keypair() -> (String, String) {
-    let secret_bytes: [u8; 32] = rand::random();
+    let mut secret_bytes = [0u8; 32];
+    OsRng.fill_bytes(&mut secret_bytes);
     let signing_key = SigningKey::from_bytes(&secret_bytes);
     let verifying_key = signing_key.verifying_key();
 
