@@ -1,3 +1,4 @@
+#![allow(unexpected_cfgs)]
 pub mod bridge;
 pub mod crypto;
 pub mod database;
